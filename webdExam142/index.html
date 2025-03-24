@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Document</title>
+  <style type="text/css">
+    .sections-info {
+      height: 15vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer {
+      background-color: #f8f9fa;
+      padding: 40px 0;
+    }
+
+    .footer .social-icons a {
+      margin-right: 10px;
+      color: #6c757d;
+    }
+
+    .footer .social-icons a:hover {
+      color: #007bff;
+    }
+
+    .data {
+      text-decoration: none;
+      color: grey;
+    }
+
+    .download-option {
+      margin-top: 30px;
+    }
+
+    .category-tabs {
+      background-color: #e9f2fb;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .category-tabs .nav-link {
+      color: #007bff;
+    }
+
+    .category-tabs .nav-link.active {
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 70vh !important;
+        }
+        .card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .card-text {
+            color: #6c757d;
+        }
+        .card-footer {
+            background-color: transparent;
+            border-top: none;
+        }
+        .badge {
+            font-size: 0.75rem;
+            padding: 0.5em 0.75em;
+        }
+
+
+        @media screen and (max-width: 600px) {
+        .card {
+            height: 90vh !important;
+        }
+        .meow1{
+          width: 100% !important;
+        }
+        .meow2{
+          width: 100% !important;
+        }
+        .meow3{
+          width: 100% !important;
+        }
+        .meow4{
+          width: 100% !important;
+        }
+      }
+  </style>
+</head>
+
+<body>
+  <!-- </header> -->
+  <header class="navbar navbar-expand-lg bg-body-tertiary p-1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/main-logo.svg" alt="svg" class="w-100" height="30">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="bi bi-ui-radios-grid me-2"></span>
+              <span>Category</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Demos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Accounts
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Megamenu
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-three-dots"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <span class="bi bi-search p-3"></span>
+        </form>
+        <div class="ms-3">
+          <img src="./images/avatar-user.jpg" alt="User Avatar" class="rounded-circle" height="40">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- section -->
+  <section class="py-0 py-xl-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Counter item -->
+        <div class="col-sm-6 col-xl-3 sections-info">
+          <div class="d-flex justify-content-center meow1 align-items-center p-4 rounded-3 bg-warning bg-opacity-25"
+            style="height: 15vh;">
+            <span class="display-6 lh-1 mb-0 bi bi-tv"></span>
+            <div class="ms-4 h6 fw-normal mb-0">
+              <div class="d-flex">
+                <h5 class="purecounter mb-0 fw-bold">10</h5>
+                <span class="mb-0 h5">K</span>
+              </div>
+              <p class="mb-0">Online Courses</p>
+            </div>
+          </div>
+        </div>
+        <!-- Counter item -->
+        <div class="col-sm-6 col-xl-3  sections-info">
+          <div class="d-flex justify-content-center meow2 align-items-center p-4 rounded-3 bg-warning bg-opacity-25"
+          <div class="d-flex justify-content-center  align-items-center p-4 rounded-3"
+            style="background-color: #0000ff4a;  height: 15vh;">
+            <span class="display-6 lh-1 text-blue mb-0"><img src="./images/image.png" alt=""></span>
+            <div class="ms-4 h6 fw-normal mb-0 text-dark">
+              <div class="d-flex">
+                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="200"
+                  data-purecounter-delay="200" data-purecounter-duration="0">200</h5>
+                <span class="mb-0 h5">+</span>
+              </div>
+              <p class="mb-0">Expert Tutors</p>
+            </div>
+          </div>
+        </div>
+        <!-- Counter item -->
+        <div class="col-sm-6 col-xl-3 sections-info">
+          <div class="d-flex justify-content-center meow3 align-items-center p-4 rounded-3 bg-warning bg-opacity-25"
+          <div class="d-flex justify-content-center  align-items-center p-4 bg-purple bg-opacity-10 rounded-3"
+            style="background-color: rgba(77, 0, 128, 0.225); height: 15vh;">
+            <span class="display-6 lh-1 text-purple mb-0"><img src="./images/graduate.png" alt=""></span>
+            <div class="ms-4 h6 fw-normal mb-0 text-dark">
+              <div class="d-flex">
+                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="60"
+                  data-purecounter-delay="200" data-purecounter-duration="0">60</h5>
+                <span class="mb-0 h5">K+</span>
+              </div>
+              <p class="mb-0">Online Students</p>
+            </div>
+          </div>
+        </div>
+        <!-- Counter item -->
+        <div class="col-sm-6 col-xl-3 sections-info">
+          <div class="d-flex justify-content-center meow4 align-items-center p-4 rounded-3 bg-warning bg-opacity-25"
+          <div class="d-flex justify-content-center  align-items-center p-4  rounded-3 bg-info bg-opacity-10"
+            style="height: 15vh;">
+            <span class="display-6 lh-1 text-info mb-0"><i class="bi bi-patch-check-fill"></i></span>
+            <div class="ms-4 h6 fw-normal mb-0">
+              <div class="d-flex">
+                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="6"
+                  data-purecounter-delay="300" data-purecounter-duration="0">6</h5>
+                <span class="mb-0 h5">K+</span>
+              </div>
+              <p class="mb-0">Certified Courses</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- cards -->
+  <!-- Main Content -->
+  <div class="container my-5">
+    <h2 class="text-center fw-bolder fs-1">Most Popular Courses</h2>
+    <p class="text-center">Choose from hundreds of courses from specialist organizations</p>
+    <div class="category-tabs mt-4">
+      <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Web Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Graphic Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Marketing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Finance</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="container my-5">
+    <div class="row">
+        <div class="col-md-3 mb-4" >
+            <div class="card">
+                <img src="./images/img1.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                    <span class="badge bg-primary">All level</span>
+                    <h5 class="card-title">Sketch from A to Z: for app designer</h5>
+                    <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <span>4.0/5.0</span>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <span><i class="bi bi-clock"></i> 12h 56m</span>
+                    <span><i class="bi bi-book"></i> 15 lectures</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4" >
+            <div class="card" height="50vh">
+                <img src="./images/img2.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                    <span class="badge bg-success">Beginner</span>
+                    <h5 class="card-title">Graphic Design Masterclass</h5>
+                    <p class="card-text">Rooms oh fully taken by worse do Points afraid but may end Rooms...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <span>4.5/5.0</span>
+                        </div>
+                        <i class="bi bi-heart-fill text-danger"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <span><i class="bi bi-clock"></i> 9h 56m</span>
+                    <span><i class="bi bi-book"></i> 65 lectures</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4" >
+            <div class="card" height="50vh">
+                <img src="./images/img3.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                    <span class="badge bg-success">Beginner</span>
+                    <h5 class="card-title">Create a Design System in Figma</h5>
+                    <p class="card-text">Rooms oh fully taken by worse do. Points afraid but may end afraid but...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <span>4.5/5.0</span>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <span><i class="bi bi-clock"></i> 5h 56m</span>
+                    <span><i class="bi bi-book"></i> 32 lectures</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4" >
+            <div class="card" >
+                <img src="./images/img4.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                    <span class="badge bg-success">Beginner</span>
+                    <h5 class="card-title">Deep Learning with React-Native</h5>
+                    <p class="card-text">Far advanced settling say finished raillery. Offered chiefly farther...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <span>4.0/5.0</span>
+                        </div>
+                        <i class="bi bi-heart-fill text-danger"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <span><i class="bi bi-clock"></i> 18h 56m</span>
+                    <span><i class="bi bi-book"></i> 99 lectures</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-3 mb-4" >
+            <div class="card">
+                <img src="./images/img1.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                    <span class="badge bg-primary">All level</span>
+                    <h5 class="card-title">Sketch from A to Z: for app designer</h5>
+                    <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <span>4.0/5.0</span>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <span><i class="bi bi-clock"></i> 12h 56m</span>
+                    <span><i class="bi bi-book"></i> 15 lectures</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4" >
+            <div class="card" height="50vh">
+                <img src="./images/img2.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                    <span class="badge bg-success">Beginner</span>
+                    <h5 class="card-title">Graphic Design Masterclass</h5>
+                    <p class="card-text">Rooms oh fully taken by worse do Points afraid but may end Rooms...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <span>4.5/5.0</span>
+                        </div>
+                        <i class="bi bi-heart-fill text-danger"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <span><i class="bi bi-clock"></i> 9h 56m</span>
+                    <span><i class="bi bi-book"></i> 65 lectures</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4" >
+            <div class="card" height="50vh">
+                <img src="./images/img3.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                    <span class="badge bg-success">Beginner</span>
+                    <h5 class="card-title">Create a Design System in Figma</h5>
+                    <p class="card-text">Rooms oh fully taken by worse do. Points afraid but may end afraid but...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <span>4.5/5.0</span>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <span><i class="bi bi-clock"></i> 5h 56m</span>
+                    <span><i class="bi bi-book"></i> 32 lectures</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4" >
+            <div class="card" >
+                <img src="./images/img4.jpg" class="card-img-top" alt="Course Image">
+                <div class="card-body">
+                    <span class="badge bg-success">Beginner</span>
+                    <h5 class="card-title">Deep Learning with React-Native</h5>
+                    <p class="card-text">Far advanced settling say finished raillery. Offered chiefly farther...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <span>4.0/5.0</span>
+                        </div>
+                        <i class="bi bi-heart-fill text-danger"></i>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <span><i class="bi bi-clock"></i> 18h 56m</span>
+                    <span><i class="bi bi-book"></i> 99 lectures</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="./images/main-logo.svg" alt="Eduport" class="mb-3" height="40">
+          <p class="text-secondary">Eduport education theme, built specifically for the education centers which is
+            dedicated to teaching and involve learners.</p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook" style="color: blue;"></i></a>
+            <a href="#"><i class="bi bi-instagram" style="color: red;"></i></a>
+            <a href="#"><i class="bi bi-twitter" style="color: skyblue"></i></a>
+            <a href="#"><i class="bi bi-linkedin" style="color: rgb(0, 94, 255)"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="data">About us</a></li>
+            <li><a href="#" class="data">Contact us</a></li>
+            <li><a href="#" class="data">News and Blogs</a></li>
+            <li><a href="#" class="data">Library</a></li>
+            <li><a href="#" class="data">Career</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Community</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="data">Documentation</a></li>
+            <li><a href="#" class="data">FAQ</a></li>
+            <li><a href="#" class="data">Forum</a></li>
+            <li><a href="#" class="data">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Teaching</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="data">Become a teacher</a></li>
+            <li><a href="#" class="data">How to guide</a></li>
+            <li><a href="#" class="data">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact</h5>
+          <p>Toll free: +1234 568 963 (9:AM to 8:PM IST)</p>
+          <p>Email: example@gmail.com</p>
+          <div class="d-flex download-option">
+            <a href="#"><img src="./images/google-play.svg" alt="Google Play" class="me-2" height="40"></a>
+            <a href="#"><img src="./images/app-store.svg" alt="App Store" height="40"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <p class="data">&copy; 2024 Eduport. Build by Webestica</p>
+        </div>
+        <div class="col-md-6 text-end">
+          <a href="#" class="data">Language</a>
+          <a href="#" class="data">Terms of use</a>
+          <a href="#" class="data">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
